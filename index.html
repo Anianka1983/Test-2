@@ -75,6 +75,7 @@
       font-size: 16px;
       line-height: 1.6;
     }
+  
     img  { display: block; max-width: 100%; }
     a    { text-decoration: none; color: inherit; }
 
@@ -673,42 +674,51 @@
   <!-- ══════════════════════════════
        FOUNDER — ANNA
   ══════════════════════════════ -->
-  <section class="founder-section" id="anna">
-    <div class="container">
-      <div class="grid-2">
+<section class="py-20 bg-background">
+  <div class="container mx-auto px-4 grid md:grid-cols-2 gap-16 items-center">
 
-        <div class="founder-img-wrap reveal">
-                <img src="/assets/anna-matchmaker.jpg" alt="Anna, Founder of Sparked Connection" class="rounded-2xl shadow-card w-full">
+    <!-- Photo — unchanged src/class, added subtle human framing -->
+    <div class="relative">
+      <img src="anna-matchmaker.jpg" alt="Anna, Founder of Sparked Connection" class="rounded-2xl shadow-card w-full">
       <!-- Credential badge overlaid on photo -->
-            <p class="badge-role">Founder &amp; Lead Matchmaker</p>
-            <p class="badge-stat">10+ years · 200+ introductions</p>
-          </div>
-        </div>
-
-        <div class="reveal reveal-d1">
-          <p class="eyebrow" style="margin-bottom:20px;">The Person Behind Every Match</p>
-
-          <h2 class="section-heading" style="margin-bottom:24px;">
-            Anna doesn't hand you an algorithm.<br/>
-            She takes the time to truly know you.
-          </h2>
-
-          <p style="font-size:0.92rem; color:var(--muted-foreground); line-height:1.8; margin-bottom:18px;">
-            After a decade working with ambitious professionals, Anna saw the same pattern: successful people, completely stuck when it came to finding a real relationship. Not for lack of trying — but because no app was built for the way they actually live.
-          </p>
-          <p style="font-size:0.92rem; color:var(--muted-foreground); line-height:1.8; margin-bottom:36px;">
-            Sparked Connection exists to change that. Every introduction is personally considered. Every match is made with intention. Anna is involved at every step — not a team, not a bot.
-          </p>
-
-          <a href="#consultation" class="cta-spark-btn">
-            Book Your Private Consultation with Anna
-          </a>
-          <p class="reassurance-micro">A confidential, no-pressure conversation — just the two of you.</p>
-        </div>
-
+      <div class="absolute bottom-5 left-5 bg-background/90 backdrop-blur-sm px-4 py-3 rounded-xl shadow-card">
+        <p class="text-xs font-medium tracking-widest uppercase text-accent">Founder & Lead Matchmaker</p>
+        <p class="text-sm font-semibold text-foreground mt-0.5">10+ years · 200+ introductions</p>
       </div>
     </div>
-  </section>
+
+    <!-- Copy -->
+    <div>
+
+      <!-- Eyebrow -->
+      <p class="text-sm font-medium tracking-widest uppercase text-accent mb-4">
+        The Person Behind Every Match
+      </p>
+
+      <h2 class="font-heading text-3xl md:text-4xl mb-6 leading-snug">
+        Anna doesn't hand you an algorithm.<br/>
+        She takes the time to truly know you.
+      </h2>
+
+      <p class="text-muted-foreground leading-relaxed mb-4">
+        After a decade working with ambitious professionals, Anna saw the same pattern: successful people, completely stuck when it came to finding a real relationship. Not for lack of trying — but because no app was built for the way they actually live.
+      </p>
+
+      <p class="text-muted-foreground leading-relaxed mb-8">
+        Sparked Connection exists to change that. Every introduction is personally considered. Every match is made with intention. Anna is involved at every step — not a team, not a bot.
+      </p>
+
+      <!-- Inline CTA — pulls directly into the conversion goal -->
+      <a href="#consultation" class="cta-spark-btn inline-block px-8 py-4 rounded-full bg-accent text-white text-sm font-semibold tracking-wide">
+        Book Your Private Consultation with Anna
+      </a>
+      <p class="mt-3 text-sm text-foreground/50">
+        A confidential, no-pressure conversation — just the two of you.
+      </p>
+
+    </div>
+  </div>
+</section>
 
 
   <!-- ══════════════════════════════
